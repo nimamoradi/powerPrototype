@@ -51,7 +51,7 @@ public class MainaPage extends AppCompatActivity {
         android.support.v7.app.ActionBar actionbar = getSupportActionBar();
         if (actionbar != null) {
             actionbar.setDisplayHomeAsUpEnabled(true);
-            actionbar.setHomeAsUpIndicator(R.drawable.ic_notifications_black_24dp);
+            actionbar.setHomeAsUpIndicator(R.drawable.ic_drawer_24dp);
         }
 
 
@@ -79,7 +79,7 @@ public class MainaPage extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                mDrawerLayout.openDrawer(GravityCompat.START);
+                mDrawerLayout.openDrawer(GravityCompat.END);
                 return true;
         }
         return super.onOptionsItemSelected(item);
